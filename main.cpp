@@ -45,6 +45,8 @@ struct MOI {
 					return true;
 			}
 		}
+		if (toado.y % 2 == 0)
+			return true;
 		return false;
 	}
 	void TaoMoi(vector<DIEM> toadoran, int chieudai, int chieurong) {
