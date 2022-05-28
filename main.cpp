@@ -29,7 +29,6 @@ struct DIEM {
 	}
 };
 struct RAN {
-struct RAN {
     	int ChieuDai;
 	vector<DIEM> ToaDo;
 	DIEM duoitruoc;
