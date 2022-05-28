@@ -29,7 +29,7 @@ struct DIEM {
 	}
 };
 struct RAN {
-    	int ChieuDai;
+    int ChieuDai;
 	vector<DIEM> ToaDo;
 	DIEM duoitruoc;
 	char XacDinhPhuongHuong(DIEM a, DIEM b) {
