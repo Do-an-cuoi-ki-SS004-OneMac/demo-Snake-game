@@ -206,7 +206,6 @@ struct KHUNG {
 		c = { (short)(chieudai + 2), 4 };
 		SetConsoleTextAttribute(h, a[rand() % 4]);
 		SetConsoleCursorPosition(h, c);
-		cout << "19522223 & 21522600 & 21522662";
 		c = { (short)(chieudai + 4), 5 };
 		SetConsoleTextAttribute(h, a[rand() % 4]);
 		SetConsoleCursorPosition(h, c);
@@ -247,6 +246,13 @@ struct KHUNG {
 
 	}
 };
+void Nocursortype()
+{
+	CONSOLE_CURSOR_INFO Info;
+	Info.bVisible = FALSE;
+	Info.dwSize = 20;
+	SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &Info);
+}
 
 void NhapCacYeuCau(KHUNG& khung)
 {
@@ -279,18 +285,13 @@ void NhapCacYeuCau(KHUNG& khung)
 		khung.level = "Easy";
 		khung.tocdo = 300;
 	}
+	Nocursortype();
 	SetConsoleTextAttribute(h, 12);
 	cout << "                                            Press any key to play...";
 	_getch();
 	system("cls");
 }
-void Nocursortype()
-{
-	CONSOLE_CURSOR_INFO Info;
-	Info.bVisible = FALSE;
-	Info.dwSize = 20;
-	SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &Info);
-}
+
 
 
 int main() {
