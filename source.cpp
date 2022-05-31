@@ -28,7 +28,9 @@ struct DIEM {
 		return (x == d2.x && y == d2.y);
 	}
 };
+
 struct RAN {};
+
 struct MOI {
 	DIEM toado;
 	bool BiRanAn(vector<DIEM> toadoran) {
@@ -57,6 +59,7 @@ struct MOI {
 		} while (MoiTrenRanHoacKhongHopLi(toadoran));
 	}
 };
+
 struct KHUNG {};
 
 
